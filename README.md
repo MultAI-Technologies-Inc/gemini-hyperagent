@@ -24,9 +24,12 @@ gemini extensions install https://github.com/MultAI-Technologies-Inc/gemini-hype
 
 | Command | Description |
 | :--- | :--- |
-| `/hyperagent:init` | Scaffolds the Hyperagent framework in the current project directory. |
-| `/hyperagent:analysis` | Audits current state and analyzes performance telemetry. |
-| `/hyperagent:evolve` | Triggers a metacognitive rewrite of the project's instructions. |
+| `/hyperagent:init` | Scaffolds the Hyperagent framework and project goals. |
+| `/hyperagent:newTrack` | Initializes a new project task track. |
+| `/hyperagent:implement` | Executes the active track autonomously using the Scratchpad Protocol. |
+| `/hyperagent:review` | Audits the current track's efficiency and triggers evolution. |
+| `/hyperagent:analysis` | Analyzes performance telemetry across all tracks. |
+| `/hyperagent:status` | Displays the current track progress and efficiency history. |
 | `/hyperagent:help` | Displays detailed information about the Hyperagent framework and its components. |
 
 ## 🏗 Framework Components

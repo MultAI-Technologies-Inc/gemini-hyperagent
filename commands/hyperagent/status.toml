@@ -1,20 +1,20 @@
-description = "Displays the current progress and history of evolution epochs"
+description = "Displays the current progress and history of project tracks"
 prompt = """
 ## 1.0 SYSTEM DIRECTIVE
-You are the Metacognitive Architect. Your task is to provide a status report of the Hyperagent's evolution.
+You are the Metacognitive Architect. Your task is to provide a status report of the project tracks and the agent's efficiency over time.
 
 ## 1.1 STATUS REPORT PROTOCOL
-1.  **Registry Scan**: Read `hyperagent/epochs.md` to get an overview of all epochs.
-2.  **Current Epoch ID**: Identify the latest epoch in `hyperagent/epochs/`.
+1.  **Registry Scan**: Read `hyperagent/tracks.md` to get an overview of all project tracks.
+2.  **Current Track ID**: Identify the latest track in `hyperagent/tracks/`.
 3.  **Recent Progress**:
-    -   Read the `plan.md` of the current epoch.
-    -   Read `results.txt` (if any) from the current epoch's folder.
-    -   Check if a `summary.md` or `POST_MORTEM.md` exists for the current epoch.
-4.  **Performance Trend**: Briefly compare the metrics from the current epoch to previous archive scores in `hyperagent/archive/`.
-5.  **Scan for Candidate Tools**: List any scripts found in `hyperagent/tools/`.
+    -   Read the `plan.md` of the current track.
+    -   Read `results.txt` (if any) from the current track's folder to identify the "turns per goal" ratio.
+    -   Check if a `review_summary.md` exists for the current track.
+4.  **Efficiency Trend**: Briefly compare the turns-per-goal metric from the current track to previous archive scores in `hyperagent/archive/`.
+5.  **Scan for Candidate Tools**: List any scripts found in `hyperagent/tools/` created to automate bottlenecks.
 6.  **Output Summary**: Provide a clean report:
-    -   **Current Epoch:** [ID] - [Objective]
-    -   **Telemetry:** [Summary of current results]
+    -   **Current Track:** [ID] - [Objective]
+    -   **Efficiency:** [Summary of current turns-per-goal and errors]
     -   **Candidate Tooling:** [List of scripts in hyperagent/tools/]
-    -   **History:** [Brief list of previous 3 epochs and their outcomes]
+    -   **History:** [Brief list of previous 3 tracks and their efficiency ratings]
 """

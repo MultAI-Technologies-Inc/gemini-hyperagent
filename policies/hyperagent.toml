@@ -2,12 +2,12 @@
 [[rule]]
 toolName = ["write_file", "replace"]
 priority = 100
-decision = "ask_user"
+# decision = "ask_user" # Removed to allow YOLO mode
 argsPattern = '"(?:file_path|path)":"(hyperagent/|SCRATCHPAD\.md)[^"]*"'
 
 # Allow tools used by hyperagent
 [[rule]]
 toolName = "run_shell_command"
 commandPrefix = ["python3 hyperagent/", "ls hyperagent/", "mkdir hyperagent/", "cp ", "mv ", "chmod +x hyperagent/tools/"]
-decision = "ask_user"
+# decision = "ask_user" # Removed to allow YOLO mode
 priority = 100
