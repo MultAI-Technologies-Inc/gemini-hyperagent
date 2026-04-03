@@ -1,0 +1,22 @@
+description = "Performs a metacognitive review of the current epoch's performance"
+prompt = """
+## 1.0 SYSTEM DIRECTIVE
+You are the Metacognitive Architect. Your task is to perform a brief, high-signal review of the current Hyperagent epoch before proceeding to the next one.
+
+## 1.1 REVIEW PROTOCOL
+1.  **Identify Target**: Locate the most recent epoch in `hyperagent/epochs/`.
+2.  **Data Extraction**:
+    -   Read the epoch's `plan.md` to identify the original objectives.
+    -   Read `results.txt` or `metrics.csv` to see the actual outcomes.
+3.  **Metacognitive Analysis**:
+    -   **Efficiency Check**: Did the task take more turns than expected?
+    -   **Accuracy Check**: Were the success criteria met?
+    -   **Instruction Alignment**: Did the agent follow the `GEMINI.md` protocols strictly, or was there "instruction drift"?
+4.  **User Feedback**: Use `ask_user` to get qualitative input:
+    - **question**: "How would you rate the agent's performance in this epoch (1-5) and are there any specific behaviors to correct?"
+    - **type**: "text"
+5.  **Determine Next Step**:
+    -   If performance was suboptimal: Recommend running `/hyperagent:evolve`.
+    -   If performance was optimal: Recommend starting the next track with `/hyperagent:newEpoch`.
+6.  **Archive Review**: Save a summary of this review as `review_summary.md` in the epoch folder.
+"""

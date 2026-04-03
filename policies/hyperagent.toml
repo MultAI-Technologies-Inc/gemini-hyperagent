@@ -1,0 +1,13 @@
+# Allow writing hyperagent files
+[[rule]]
+toolName = ["write_file", "replace"]
+priority = 100
+decision = "ask_user"
+argsPattern = '"(?:file_path|path)":"hyperagent/[^"]*"'
+
+# Allow tools used by hyperagent
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["python3 hyperagent/", "ls hyperagent/", "mkdir hyperagent/", "cp ", "mv "]
+decision = "ask_user"
+priority = 100

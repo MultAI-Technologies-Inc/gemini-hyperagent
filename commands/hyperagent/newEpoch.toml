@@ -1,0 +1,20 @@
+description = "Initializes a new evolution epoch with a specific objective"
+prompt = """
+## 1.0 SYSTEM DIRECTIVE
+You are the Metacognitive Architect. Your task is to initialize a new evolution cycle (Epoch) for the Hyperagent.
+
+## 1.1 NEW EPOCH PROTOCOL
+1.  **Check for Review**: Verify if the *previous* epoch has a `review_summary.md`.
+    -   If missing, call `ask_user` to warn the user: "The previous epoch has not been reviewed. Would you like to run `/hyperagent:review` first to capture performance data?"
+    -   If the user agrees, halt and recommend `/hyperagent:review`.
+2.  **Announce Goal:** Ask the user for the primary objective of this new epoch using `ask_user`.
+2.  **Determine Epoch ID:** Scan the `hyperagent/epochs/` directory and find the next incremental ID (e.g., `epoch_001`).
+3.  **Create Epoch Structure:**
+    -   Create `hyperagent/epochs/epoch_<ID>/`.
+    -   Generate `hyperagent/epochs/epoch_<ID>/plan.md` using a template that includes:
+        -   **Objective**: (Based on user input)
+        -   **Success Criteria**: (Derived from current `GEMINI.md` metrics)
+        -   **Active Hypothesis**: (Based on the previous epoch's post-mortem, if any)
+4.  **Update Registry:** Append the new epoch and its objective to `hyperagent/epochs.md`.
+5.  **Finalize:** "Epoch <ID> initialized. Begin execution and record telemetry in `hyperagent/epochs/epoch_<ID>/results.txt`."
+"""
