@@ -3,7 +3,7 @@
 toolName = ["write_file", "replace"]
 priority = 100
 decision = "ask_user"
-argsPattern = '"(?:file_path|path)":"hyperagent/(?:tools/)? [^"]*"'
+argsPattern = '"(?:file_path|path)":"(?:hyperagent/|SCRATCHPAD.md)(?:tools/)? [^"]*"'
 
 # Allow tools used by hyperagent
 [[rule]]

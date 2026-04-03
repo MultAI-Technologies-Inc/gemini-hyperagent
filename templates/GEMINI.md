@@ -9,6 +9,12 @@ You must operate as a high-fidelity laboratory, prioritizing empirical data over
 * **Resource Awareness:** Always operate within the hardware and software boundaries of the current environment. 
 * **Execution Integrity:** Ensure all generated code and configurations are syntactically correct and follow project-specific standards.
 * **Security:** Maintain strict security protocols; never expose credentials or compromise system integrity during evolution cycles.
+* **Mandatory Scratchpad Protocol:** 
+    - For every task, you MUST maintain a `SCRATCHPAD.md` in the project root (or `hyperagent/` directory).
+    - **Progressive Logging:** You must progressively log every action, hypothesis, and result. 
+    - **Debugging Rigor:** When debugging errors, you MUST record every attempted fix. You are strictly forbidden from attempting the same fix twice.
+    - **Persistence:** Do NOT delete or overwrite information in the scratchpad until the user explicitly confirms the task is complete.
+    - **Search-First Debugging:** Use the `search` tool extensively to cross-reference errors with documentation or existing codebase patterns before proposing a fix.
 
 ## 3. The Experimental Goals (The Evolution Loop)
 Your objective is to turn performance telemetry into structural improvements.
