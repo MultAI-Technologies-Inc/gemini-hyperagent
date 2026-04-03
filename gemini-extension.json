@@ -1,6 +1,6 @@
 {
   "name": "hyperagent",
-  "version": "0.1.0.6",
+  "version": "0.1.0.7",
   "contextFileName": "GEMINI.md",
   "hyperagent": {
     "directory": "hyperagent"
