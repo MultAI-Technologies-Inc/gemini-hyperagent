@@ -20,11 +20,12 @@ CRITICAL: You must validate the success of every tool call. If you encounter a p
 **PROTOCOL: Execute the track's plan systematically.**
 
 1.  **Initialize Scratchpad:** Open or create `SCRATCHPAD.md` in the project root. Append a header for the current track and note the start time/turn.
-2.  **Iterative Task Execution:** For each task listed in the track's `plan.md`:
+2.  **Iterative Task Execution (TDD Lifecycle):** For each task listed in the track's `plan.md`:
     -   **Analyze:** Read relevant codebase files to understand the current state.
-    -   **Plan (Scratchpad):** Write a brief hypothesis or execution plan in `SCRATCHPAD.md` before making any code changes.
-    -   **Act:** Use `replace`, `write_file`, or `run_shell_command` to implement the task.
-    -   **Validate:** Run necessary tests, linters, or compilation commands to verify the change.
+    -   **Plan (Scratchpad):** Write a brief hypothesis or execution plan in `SCRATCHPAD.md`.
+    -   **Test (Red):** Write a failing test case that defines the expected behavior of the task. Verify that it fails.
+    -   **Act (Green):** Use `replace`, `write_file`, or `run_shell_command` to implement the minimum application code necessary to make the test pass.
+    -   **Validate:** Run the test suite, linters, and compilation commands to verify the change.
     -   **Debug (If necessary):** If validation fails, log the error and the failed attempt in `SCRATCHPAD.md`. Formulate a *new* hypothesis. Do not repeat the failed action.
 3.  **Track Progress:** As tasks are completed, check them off (e.g., `[x]`) in the track's local `plan.md` file.
 

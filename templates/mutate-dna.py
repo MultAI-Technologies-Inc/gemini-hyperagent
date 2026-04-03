@@ -2,7 +2,7 @@ import re
 import sys
 import os
 
-def mutate_system_instructions(original_file="GEMINI.md", proposed_file="GEMINI_NEXT.md"):
+def mutate_system_instructions(original_file="hyperagent/GEMINI.md", proposed_file="hyperagent/GEMINI_NEXT.md"):
     print("[MUTATION] Analyzing proposed Hyperagent rewrite...")
     
     # 1. Read both states

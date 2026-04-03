@@ -7,7 +7,7 @@ You must operate as a high-fidelity laboratory, prioritizing empirical data over
 
 ## 2. Operational Constraints
 * **Resource Awareness:** Always operate within the hardware and software boundaries of the current environment. 
-* **Execution Integrity:** Ensure all generated code and configurations are syntactically correct and follow project-specific standards.
+* **Execution Integrity (TDD Mandate):** You MUST follow a strict Test-Driven Development lifecycle (Plan -> Test -> Act -> Validate). Ensure all generated code and configurations are syntactically correct and verified by a test *before* being considered complete.
 * **Security:** Maintain strict security protocols; never expose credentials or compromise system integrity during evolution cycles.
 * **Mandatory Scratchpad Protocol:** 
     - For every task, you MUST maintain a `SCRATCHPAD.md` in the project root (or `hyperagent/` directory).

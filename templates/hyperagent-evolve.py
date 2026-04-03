@@ -120,7 +120,9 @@ def main():
     
     # 5. Splicing DNA
     print("[SYSTEM] Splicing new DNA into active context...")
-    subprocess.run(["python3", "mutate-dna.py"], check=True)
+    subprocess.run(["python3", "hyperagent/mutate-dna.py"], check=True)
     
 if __name__ == "__main__":
+    main()
+name__ == "__main__":
     main()
