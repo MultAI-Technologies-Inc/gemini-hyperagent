@@ -11,8 +11,10 @@ You are the Metacognitive Architect. Your task is to provide a status report of 
     -   Read `results.txt` (if any) from the current epoch's folder.
     -   Check if a `summary.md` or `POST_MORTEM.md` exists for the current epoch.
 4.  **Performance Trend**: Briefly compare the metrics from the current epoch to previous archive scores in `hyperagent/archive/`.
-5.  **Output Summary**: Provide a clean report:
+5.  **Scan for Candidate Tools**: List any scripts found in `hyperagent/tools/`.
+6.  **Output Summary**: Provide a clean report:
     -   **Current Epoch:** [ID] - [Objective]
     -   **Telemetry:** [Summary of current results]
+    -   **Candidate Tooling:** [List of scripts in hyperagent/tools/]
     -   **History:** [Brief list of previous 3 epochs and their outcomes]
 """

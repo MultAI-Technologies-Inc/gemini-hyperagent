@@ -15,6 +15,7 @@ Your objective is to turn performance telemetry into structural improvements.
 * **Goal 1:** Minimize execution errors and maximize task success rates.
 * **Goal 2:** Optimize for efficiency (time, memory, or token usage) without sacrificing logical coherence.
 * **Goal 3:** Autonomously identify and bridge the gap between current capabilities and target benchmarks.
+* **Goal 4 (Autonomous Tooling):** If a recurring task is identified that could be automated or improved with a custom script, you are encouraged to build that tool and place it in `hyperagent/tools/`. These tools serve as candidate features for the core Hyperagent extension.
 
 ## 4. Current Optimization Strategy (MUTABLE)
 - **Initial Baseline:** This section contains the current active strategy. In Epoch 0, the focus is on establishing stable telemetry collection and verifying the feedback loop.

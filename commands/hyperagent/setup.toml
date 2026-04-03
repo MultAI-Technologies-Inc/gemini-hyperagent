@@ -16,6 +16,7 @@ You are the Metacognitive Architect. Your goal is to guide the user through a st
 
 3.  **Scaffolding (Plan Mode):**
     -   Create `hyperagent/` directory.
+    -   Create `hyperagent/tools/` directory for autonomous helper scripts.
     -   **Generate `hyperagent/GEMINI.md`**: Tailor the "Experimental Goals" and "Identity" sections based on the user's answers.
     -   **Deploy Scripts**: 
         -   Copy `hyperagent-evolve.py` template.

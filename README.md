@@ -11,6 +11,7 @@ The Hyperagent extension implements a "self-evolution" loop. It allows an AI age
 - **Autonomous Evolution**: Triggers an iterative loop where the agent reviews its own performance data and "mutates" its instructions for the next epoch.
 - **Performance Archiving**: Maintains an immutable record of every generation, including its instructions and associated fitness scores.
 - **Safety-First Mutation**: Includes a "Splicing" mechanism that only updates mutable sections of the system instructions, preserving core directives and system integrity.
+- **Autonomous Tooling Development**: Agents can identify recurring pain points and build their own helper scripts in `hyperagent/tools/`. These are tracked as candidate features for future core updates.
 - **Telemetry-Driven Insights**: Provides a structured audit of performance metrics and bottlenecks.
 
 ## 📥 Installation
