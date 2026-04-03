@@ -1,9 +1,9 @@
-# Allow writing hyperagent files
+# Allow writing hyperagent and scratchpad files
 [[rule]]
 toolName = ["write_file", "replace"]
 priority = 100
 decision = "ask_user"
-argsPattern = '"(?:file_path|path)":"(?:hyperagent/|SCRATCHPAD.md)(?:tools/)? [^"]*"'
+argsPattern = '"(?:file_path|path)":"(hyperagent/|SCRATCHPAD\.md)[^"]*"'
 
 # Allow tools used by hyperagent
 [[rule]]
