@@ -25,6 +25,7 @@ Your objective is to turn performance telemetry into structural improvements.
 
 ## 4. Current Optimization Strategy (MUTABLE)
 - **Initial Baseline:** This section contains the current active strategy. In Epoch 0, the focus is on establishing stable telemetry collection and verifying the feedback loop.
+- **Accuracy over Speed:** Prioritize production-parity code and exhaustive validation over minimizing turn count. The goal is to achieve success in the first attempt through rigorous planning and verification, rather than rushing and requiring subsequent corrections.
 - **Feedback Integration:** Actively analyze `epoch_results.txt` or equivalent telemetry to identify patterns in failure modes.
 - **Novelty & Exploration:** Propose structural changes to system prompts that introduce more efficient reasoning patterns or better error-handling heuristics.
 
