@@ -7,10 +7,10 @@ import glob
 # ==========================================
 # CONFIGURATION & CONSTANTS
 # ==========================================
-ARCHIVE_DIR = "archive"
+ARCHIVE_DIR = "hyperagent/archive"
 DNA_FILE = "GEMINI.md"
 PROPOSED_DNA = "GEMINI_NEXT.md"
-TELEMETRY_FILE = "epoch_results.txt"
+TELEMETRY_FILE = "hyperagent/epoch_results.txt"
 
 def ensure_archive_exists():
     if not os.path.exists(ARCHIVE_DIR):
@@ -123,6 +123,4 @@ def main():
     subprocess.run(["python3", "hyperagent/mutate-dna.py"], check=True)
     
 if __name__ == "__main__":
-    main()
-name__ == "__main__":
     main()

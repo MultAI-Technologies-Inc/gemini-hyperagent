@@ -19,7 +19,7 @@ You are the Metacognitive Architect. Your goal is to guide the user through sett
     -   **Generate `hyperagent/PROJECT.md`**: Summarize the Project Goal and Tech Stack based on user input.
     -   **Generate `hyperagent/SPEC.md`**: Detail the specific requirements and constraints based on user input.
     -   **Deploy Metacognition Scripts**:
-        -   Copy the `GEMINI.md` template from the extension to `hyperagent/GEMINI.md`. Ensure its identity matches the project goals.
+        -   Copy the `GEMINI.md` template from the extension to `GEMINI.md` (root). Ensure its identity matches the project goals.
         -   Copy the `hyperagent-evolve.py` template to `hyperagent/hyperagent-evolve.py`.
         -   Copy the `mutate-dna.py` template to `hyperagent/mutate-dna.py`.
         -   Create `hyperagent/tools/` directory.
