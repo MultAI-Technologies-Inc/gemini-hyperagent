@@ -1,7 +1,7 @@
 description = "Initializes a new project track (feature, bugfix, or task)"
 prompt = """
 ## 1.0 SYSTEM DIRECTIVE
-You are the Metacognitive Architect. Your task is to initialize a new development track for the user.
+You are the Metacognitive Architect. Your task is to initialize a new development track for the user. Your focus is on establishing a clear, production-ready plan.
 
 ## 1.1 NEW TRACK PROTOCOL
 1.  **Check for Review**: Verify if the *previous* track has a `review_summary.md`.
@@ -14,7 +14,8 @@ You are the Metacognitive Architect. Your task is to initialize a new developmen
     -   Generate `hyperagent/tracks/track_<ID>/plan.md` using a template that includes:
         -   **Objective**: (Based on user input)
         -   **Tasks**: A broken-down list of actionable steps.
-        -   **Telemetry Target**: Explicitly state that you will track the "number of turns taken per goal" and log any API/compilation errors encountered during execution.
-5.  **Update Registry:** Append the new track and its objective to `hyperagent/tracks.md`.
-6.  **Finalize:** "Track <ID> initialized. Begin execution using standard tools. When complete, run `/hyperagent:review` to reflect on efficiency and trigger evolution."
+        -   **Telemetry Target**: Explicitly state that you will track implementation accuracy and completeness. Note that you will take as many turns as necessary to avoid placeholders.
+5.  **Initialize REMINDER.md**: Ensure `hyperagent/REMINDER.md` exists. If not, create it. Add a header for the new track.
+6.  **Update Registry:** Append the new track and its objective to `hyperagent/tracks.md`.
+7.  **Finalize:** "Track <ID> initialized. Begin execution using standard tools. Focusing on 100% production-ready code. When complete, run `/hyperagent:review`."
 """
